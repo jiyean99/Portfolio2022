@@ -733,9 +733,18 @@ a{
     bottom: 30vh;
 }
 .outro-cont>article:last-child{
-    position: absolute;
+    position: fixed;
+    width: 100%;
     right: 0;
-    bottom: 30vh;
+    bottom: 18vh;
+    display: flex;
+    justify-content: flex-end;
+}
+.outro-cont>article:last-child>a{
+    display: block;
+    width: 182px;
+    height: 183px;
+    margin-right: 14%;
 }
 .keyword > p{
     transition: 0.3s;
@@ -757,8 +766,7 @@ a{
     transform: translateY(30%);
 }
 /* tablet ver */
-@media screen and (max-width : 1600px) and (min-width : 1300px){
-/* @media screen and (max-width : 1550px) and (min-width : 641px){*/
+@media screen and (max-width : 1600px) and (min-width : 1350px){
     /* intro(header) page */
     .intro-title{
         font-size: 130px;
@@ -950,6 +958,223 @@ a{
     }
     .mobile-cont>article:last-child>img{
         width: 180%;
+    }
+    /* footer */
+    .page-title4 h2{
+        font-size: 55px;
+    }
+    #outro-page .keyword {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    #mailCopy{
+        font-size: 18px;
+        width: 210px;
+    }
+}
+/* mobile ver */
+@media screen and (max-width : 1350px) and (min-width : 1200px){
+    /* intro(header) page */
+    .intro-title{
+        font-size: 110px;
+    }
+    .title-container>h1{
+        width: 440px;
+        font-size: 24px;
+        padding: 0 20px;
+    }
+    .title-container>h1>span{
+        margin-top: 20px;
+        font-size: 60px;
+    }
+    .title-container>p{
+        width: 440px;
+        font-size: 14px;
+        line-height: 1.3rem;
+        padding: 0 20px;
+    }
+    .left-btn{ 
+        width: 220px;
+        font-size: 14px;
+    }
+    .right-btn{
+        width: 220px;
+        font-size: 14px;
+    }
+    .button-wrap{
+        display: flex;
+        width: calc(100% - 20px);
+        height: 97px;
+    }
+    .intro-grid{
+        width: 399px;
+        height: 285px;
+        grid-template-columns: repeat(7, 57px);
+        grid-template-rows: repeat(5, 57px);
+    }
+    .item{
+        font-size: 40px;
+    }
+    /* about section page */
+    .about-title{
+        font-size: 130px;
+    }
+    .about-text>h3>img{
+        width: 440px;
+    }
+    .about-text>h3>p{
+        width: 440px;
+        font-size: 14px;
+        padding: 0 20px;
+    }
+    .profile-contents{
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+    .introduce-keyword>div{
+        height: 230px;
+        border: none;
+        margin-left: 70px;
+    }
+    .introduce-keyword>div>h4{
+        font-size: 20px;
+    }
+    .introduce-keyword>div>p{
+        font-size: 18px;
+    }
+    .certificate-contents{
+        font-size: 16px;
+        margin-left: 170px;
+    }
+    .about-text>h3{
+        font-size: 45px;
+    }
+    .about-text>h3:nth-child(2){
+        margin-top: 620px;
+    }
+    .skill-grahp>li>p{
+        font-size: 16px;
+        width: 130px;
+    }
+    .skill-grahp>li>p:last-child{
+        width: 200px;
+    }
+    /* design project section page */
+    .page-title1 h2{
+        font-size: 55px;
+    }
+    #design-project .container {
+        top: 100px;
+    }
+    #design-project .tit{
+        width: 400px;
+    }
+    #design-project .tit > p {
+        font-size: 18px;
+    }
+    #design-project .tit > h3 {
+        font-size: 50px;
+    }
+    #design-project article {
+        width: 440px;
+        height: 350px;
+    }
+    #design-project .keyword {
+        font-size: 18px;
+        padding: 0;
+    }
+    #design-project .pic{
+        width: 750px;
+    }
+    #design-project .pic>img{
+        width: 100%;
+    }
+    #design-project .expla{
+        font-size: 14px;
+    }
+    #design-project .button-wrap{
+        display: none;
+    }
+    #design-project .tablet button{
+        margin-top: 60px;
+        color: black;
+        border-color: #707070;
+        width: 200px;
+        display: inline-block;
+        background-image: url("../images/button-icon.png");
+    }
+    /* clone project section page */
+    .page-title2 h2{
+        font-size: 55px;
+    }
+    #clone-project .tit{
+        width: 400px;
+    }
+    #clone-project .tit > p {
+        font-size: 18px;
+    }
+    #clone-project .tit > h3 {
+        font-size: 50px;
+    }
+    #clone-project article {
+        width: 440px;
+    }
+    #clone-project .keyword {
+        font-size: 18px;
+    }
+    .clone-cont{
+        padding-left: 0;
+    }
+    .clone-cont>article:first-child{
+        margin: 20px;
+    }
+    .clone-cont>article:last-child{
+        right: -10%;
+        bottom: 60px;
+    }
+
+    .res-mockup{
+        transform: translateX(-80px);
+    }
+    .res-mockup>img{
+        width: 130%;
+    }
+    /* mobile project section page */
+    .page-title3 h2{
+        font-size: 55px;
+    }
+    #mobile-project .tit{
+        width: 400px;
+    }
+    #mobile-project .tit > p {
+        font-size: 18px;
+    }
+    #mobile-project .tit > h3 {
+        font-size: 50px;
+    }
+    #mobile-project article {
+        width: 440px;
+    }
+    #mobile-project .keyword {
+        font-size: 18px;
+    }
+    .mobile-cont{
+        padding-left: 0;
+    }
+    .mobile-cont>article:first-child{
+        margin: 20px;
+    }
+    .mobile-cont>article:last-child{
+        right: 50px;
+        top: 80px;
+    }
+    .mobile-cont>article:last-child>img{
+        width: 180%;
+    }
+    /* 버튼크기 동일하게 설정 */
+    .clone-cont>article>.left-btn, .clone-cont>article>.right-btn,
+    .mobile-cont>article>.left-btn, .mobile-cont>article>.right-btn  {
+        width: calc(50% - 15px);
     }
     /* footer */
     .page-title4 h2{
